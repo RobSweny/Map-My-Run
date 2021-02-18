@@ -1,0 +1,309 @@
+*{
+	font-family: 'Lato', sans-serif;
+}
+
+.topnav {
+	margin:0 auto;
+	position: relative;
+	height: 50px;
+	width: 700px;
+	margin-top: 20px;
+	background-color: #2e5d27;
+	overflow: hidden;
+	border-radius: 20px;
+	text-align: center;
+	filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5));
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    line-height: 50px;
+    text-align: center;
+    height: 50px;
+    color: white;
+    padding: 28px 35px;
+    text-decoration: none;
+    font-family: 'quicksand';
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+}
+
+/* Adjust position of the basket icon on nav */
+#icon{
+	position:relative;
+	bottom:3px;
+}
+
+/* Style images in the carousel, make them fit inside the window */
+.carousel-inner img{
+	width: 100%;
+	height: 450px;
+	object-fit: cover;
+}
+
+/* Change colour to the buttons on carousel */
+#casousel_button,
+#casousel_button1,
+#casousel_button2,
+#casousel_button3{
+	background-color:#2e5d27;
+	border:none;
+}
+
+/* Display flex applied to the div of three images with space around for better positioning */
+#store_images{
+	display:flex;
+	justify-content:space-around;
+	margin-top:20px;
+	align-items:center;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+/* Container with image and button has position relative for button positioning purposes */
+.store_container{
+	position:relative;
+}
+
+/* Set width and style to the three images below carousel */
+#store_images img{
+	width:400px;
+	height:auto;
+	margin-bottom:50px;
+	margin-top:50px;
+	filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5));
+	border-radius: 15px;
+}
+
+/* Style and position buttons of the top three images */
+.button{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 200%);
+	-ms-transform: translate(-50%, 200%);
+	background-color: #4CAF50;
+	color: white;
+	font-size: 14px;
+	padding: 6px 15px;
+	border: none;
+	border-radius: 15px;
+	filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5));
+}
+
+/* Style and position "add to basket" buttons */
+.button_1{
+	border:none;
+	padding-left:20px;
+	padding-right:20px;
+	background:#4CAF50;
+	color:white;
+	width:100%;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius: 15px;
+	margin-bottom:30px;
+	filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5));
+}
+
+/* Style the "remove items" buttons */
+.button_2{
+	border:none;
+	padding-left:10px;
+	padding-right:10px;
+	background:#4CAF50;
+	color:white;
+	padding-top:5px;
+	padding-bottom:5px;
+	border-radius: 15px;
+}
+
+/* Change colors to previous mentioned buttons and to "submit" button on hover action */
+.button_1:hover,
+.button:hover,
+.button_2:hover,
+.submit:hover{
+	background:#2e5d27;
+}
+
+/* Style the sales span for decreased prices */
+.sales{
+	color:red;
+}
+
+/* Add divisorial line above headers, create padding and additional styling */
+.store_header{
+	border-top: black 1px solid;
+	padding-top:50px;
+	font-size:1.7em;
+	text-align:center;
+	margin:50px 0px 50px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Style and position the three main sections in the middle of the page (Men Running, Women Running and Accessories */
+.store_Section{
+	margin:0 auto;
+	width:90%;
+	display:flex;
+	justify-content:space-around;
+	margin-top:20px;
+	align-items:center;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+/* Change colour to text to a dark shade of grey */
+.store_Section, .store_details{
+	color:#242424;
+}
+
+/* Set width and height for the images of products */
+.store_Section img{
+	width:180px;
+	height:120px;
+}
+
+/* Apply display flex to price, name, images and button in the three main sections so they can aligh in the center of the div */
+.store_shoes p,
+.store_shoes img,
+.button_1{
+	display: flex;
+	justify-content:center;
+}
+
+/* Position the form in the middle of the page */
+.store_details{
+	width:80%;
+	margin:0 auto;
+}
+
+/* Create some space around the elements in the form */
+.store_details td{
+	padding:5px;
+}
+
+/* Increase size of text slightly */
+.store_details p{
+	font-size:1.5em;
+}
+
+/* Delete border around input fields */
+.store_details input{
+	border:0;
+}
+
+/* Style basket/billing info giving them light shades of green for the background and margin on top */
+.store_basket,
+.store_billinginfo{
+	margin-top:50px;
+	background-color:rgba(76, 175, 80, 0.1);
+	padding:20px;
+	border-radius: 30px;
+	width:100%;
+}
+
+/* Position basket section to the left with a predefined width */
+.store_basket{
+	float:left;
+	width:480px;
+}
+
+/* Position Billing Info section to the right with a predefined width */
+.store_billinginfo{
+	float:right;
+	width:480px
+}
+
+/* Style background colour for the input field in the basket */
+.store_basket input{
+	background-color:#e6f5ff;
+}
+
+/* Syle submit button */
+.submit{
+	border:none;
+	padding-left:20px;
+	padding-right:20px;
+	background-color:#4CAF50;
+	color:white;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius: 15px;
+	filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5));
+}
+
+/* The text in the basket section diplaying the cost will always be bold and in italics */
+#totalCost{
+	font-style:italic;
+	font-weight:bold;
+}
+
+/* Media Queries */
+
+@media(max-width:1268px){
+
+/* Focused on the form section, I will display the two  sections on top of each other with some margin on top */
+	.store_details{
+		display:flex;
+		justify-content:center;
+	}
+	
+	.store_billinginfo,
+	.store_basket{
+		float:none;
+		margin-top:15px;
+		width:500px;
+	}
+}
+
+@media(max-width:1000px){
+	/* Decrease margin on top of the three main images */
+	#store_images img{
+		margin-top:0px;
+	}
+}
+
+@media(max-width:700px){
+	/* Decrease size of nav and, down below, decrease fint-size and padding */
+	.topnav {
+		width: 550px;
+}
+
+	.topnav a {
+		padding: 17px 23px;
+		font-size: 14px;
+	}
+}
+
+@media(max-width:600px){
+	/* Decrease size of nav even more to fit all fields in a row and, down below, decrease fint-size and padding */
+	.topnav {
+		width: 450px;
+	}
+
+/* Style the links inside the navigation bar */
+	.topnav a {
+		color: white;
+		padding: 17px 15px;
+		font-size: 14px;
+	}
+
+/* Decrese size of two divs on the form section to make them fit with decreased screen */
+	.store_billinginfo,
+	.store_basket{
+		margin-top:15px;
+		width:450px;
+	}
+	
+}

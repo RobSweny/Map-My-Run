@@ -1,0 +1,184 @@
+/* NAV BAR */
+.topnav {
+	position: relative;
+	height: 50px;
+	width: 75%;
+	margin-left: 15%;
+	margin-top: 20px;
+	background-color: #2e5d27;
+	overflow: hidden;
+	border-radius: 20px;
+	text-align: center;
+	filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5));
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    line-height: 50px;
+    text-align: center;
+    height: 50px;
+    color: white;
+    vertical-align: auto;
+    padding: 28px 35px;
+    text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+	font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color:  #2e5d27;
+	background-color: #c1e6ef;
+	text-decoration: none;
+	border-radius: 50%;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #c1e6ef;
+	color: #2e5d27;
+	border-radius: 50%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+
+.contactBody {
+	background-color: #c1e6ef;
+	bottom: 0;
+	background-position: center bottom;
+	width: auto;
+}
+
+.about_us {
+    display: flex;
+    padding-top: 50px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_us_small {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_us {
+    display: flex;
+    font-size: 35px;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Dev images */
+.the_dev_box {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	
+}
+
+.contact_div_one {
+    height:auto;
+    top: 10%;
+	width: 20px;
+	padding: 15px;
+	background-color: #9dcc95;
+	border-radius: 10px 0px 0px 10px;
+}
+.contact_div_one:hover {
+	background-color: #2e5d27;
+
+}
+
+.contact_div_two {
+	height:auto;
+	width: 20px;
+	padding: 15px;
+	background: #9dcc95;
+
+}
+.contact_div_two:hover {
+	background-color: #2e5d27;
+
+}
+.contact_div_three {
+	height:auto;
+	width: 20px;
+	padding: 15px;
+ 	background: #9dcc95;
+	border-radius: 0px 10px 10px 0px;	
+}
+.contact_div_three:hover {
+	background-color: #2e5d27;
+
+}
+.contact-img {
+	width: 150px;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 15px;
+	border-radius: 50%;
+	background-color: #0B0C10;
+}
+
+.contact-name {
+	padding-left: 30px;
+	width: 250px;
+	text-align: left;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    color: white;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #9dcc95;
+    margin-top:35px;
+    margin-bottom:50px;
+    padding: 20px;
+	filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5));	
+  }
+  
+@media(max-width:768px){
+	the_dev_box{
+		flex-direction:column;
+	}
+	
+}

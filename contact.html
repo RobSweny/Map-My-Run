@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TGJ0EJWH3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-7TGJ0EJWH3');
+        </script>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact</title>
+        <meta name="description" content="Website for Walking/Running, Mental Health">
+        <meta name="keywords" content="Running, Walking, Mental Health, Community, COVID, Health, Outdoors, Store, Shoes, Articles">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjdoK_PFnj8avVaOKWvMVWISLz1VPg_O8" type="text/javascript"></script>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="CSS/contactPaul.css" />
+        
+        <!-- Javascript -->
+        <script type="text/javascript" src="Javascript/contact.js"></script>
+        <script type="text/javascript" src="Javascript/paulJS.js"></script>   
+
+        <!-- Bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
+        
+        <!-- Fancy alerts from Sweetalert! https://sweetalert2.github.io/-->
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+   </head>
+    <body class="contactBody" onload="javascript:onLoad()">
+        <script src="" async defer></script>
+        <!-- NAV BAR -->
+        <div class="top_image">
+			<div class="topnav">
+			  <a title="link to index page" href="index.html">Home</a>
+			  <a title="link to about page" href="about.html">About</a>
+			  <a title="link to articles page" href="articles.html">Articles</a>
+			  <a title="link to store page" href="store.html">Store</a>
+			  <a title="link to contact page" class="active" href="contact.html">Contact</a>
+        </div>
+
+        <!-- Introduction to dev-->
+        <p class="about_us">Meet the Devs</p>
+        <p class="about_us_small">Click our avatars to see our different CSS styles</p>
+
+        <!-- Div to hold the Devs -->
+		<div class="the_dev_box">
+            <!-- Dev Paul -->
+            <table class="contact_div_one" id="contact_div_one" onclick="changeCSS('./CSS/contactPaul.css', 0); changeColor();">
+                <tbody>
+                    <tr>
+                        <!-- Bouncing arrow on top of users with selected CSS-->
+                        <div id="arrow" class="arrow bounce"></div>
+                        <!-- Avatars made here: https://avatarmaker.net/create-avatar -->
+                        <td><img class="contact-img" src="Images/Avatars/PaulAvatar.png" alt="Avatar"></td>
+                        <td>
+                            <p class="contact-name"><b>Name</b>:<Br>Paul</p>
+                            <p class="contact-name"><b>About Me</b>:<Br>Looking to transition to software</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Dev Luca -->
+            <table class="contact_div_two" onclick="changeCSS('./CSS/contactLuca.css', 0);changeColorLuca();">
+                <tbody>
+                    <tr>
+                        <!-- Avatars made here: https://avatarmaker.net/create-avatar -->
+                        <td><img class="contact-img" src="Images/Avatars/LucaAvatar.png" alt="Avatar"></td>
+                        <td>
+                            <p class="contact-name"><b>Name</b>:<Br>Luca</p>
+                            <p class="contact-name"><b>About Me</b>:<Br>Attending NCI College for software development</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Dev Rob -->
+            <table class="contact_div_three" onclick="changeCSS('./CSS/contactRob.css', 0); changeColorRob();">
+                <tbody>
+                    <tr>
+                        <!-- Avatars made here: https://avatarmaker.net/create-avatar -->
+                        <td><img class="contact-img" src="Images/Avatars/RobAvatar.png" alt="Avatar"></td>
+                        <td>
+                            <p class="contact-name"><b>Name</b>:<Br>Rob</p>
+                            <p class="contact-name"><b>About Me</b>:<Br>Working to get a job in software development!</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Contact us form-->
+        <div class="container">
+            <p class="contact_us">Contact Us</p>
+            <form name="Form" onsubmit="IsEmpty()">
+                <!-- First Name -->
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <!-- Last Name -->
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <!-- Subject -->
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+          </div>
+	  
+    </body>
+</html>

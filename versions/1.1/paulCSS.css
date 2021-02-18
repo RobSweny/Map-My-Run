@@ -1,0 +1,116 @@
+/*Colors
+
+Background:
+0B0C10
+Secondary Background:
+1F2833
+Gray
+CSC6C7
+
+Primary:
+66FCF1
+Secondary
+A5A29
+*/
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #c1e6ef;
+	color: #black;
+
+}
+
+.navbar{
+	background-color: #2e5d27;
+	color: #white !important; /*override bootstrap coloring using important*/ 
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 20px;
+	border-radius: 20px;
+}
+.navbar a{
+    text-decoration: none;
+	color: white;
+	text-align: center;
+}
+.navbar a:hover {
+    background-color: green;
+    color: white;
+	height: 100%;
+	
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+}
+.navbar a.visited{
+	text-decoration: none;
+}
+
+.hero {
+	background-color: #c1e6ef;
+}
+.page-header{
+	text-align: center;
+
+}
+.page-header>h1{
+	font-size: 400%;
+}
+.hero h1,h2,h3,h4,h5{
+	font-weight: 700;
+	color: #2e5d27 !important;
+}
+
+.hero-post{
+	position: relative;
+}
+
+
+/* position the badge/links to to the right corner of their box*/
+.hero-post-badges {
+	position: absolute; 
+	top: 10px;
+	right: 10px;
+}
+.hero-post-badges>a{
+	background-color: #1F2833;
+	display: block;
+
+}
+
+.btn-main {
+	background-color: white !important;
+	color: #1F2833;
+}
+.blog-posts{
+	background-color: white;
+}
+
+footer {
+	background-color:  #4CAF50;
+	color: white !important;
+}
+footer a {
+	color: white;
+}
+
+.social-links {
+	background-color: #4CAF50;
+	font-size: 3rem;
+}
+.social-links a{
+	color: white;
+}
+
+.prsnl-scl-link{
+	font-size: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.hero-img-text{
+	background-color: white;
+}

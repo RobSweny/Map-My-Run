@@ -1,0 +1,132 @@
+/*Colors
+
+Background:
+0B0C10
+Secondary Background:
+1F2833
+Gray
+CSC6C7
+
+Primary:
+66FCF1
+Secondary
+A5A29
+*/
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #c1e6ef;
+	color: #black;
+}
+
+/* NAV BAR */
+.topnav {
+	position: relative;
+	height: 50px;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 20px;
+	background-color: #2e5d27;
+	overflow: hidden;
+	border-radius: 20px;
+	text-align: center;
+	filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5));
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+	line-height: 50px;
+	text-align: center;
+	height: 50px;
+	color: white;
+	vertical-align: auto;
+	padding: 28px 35px;
+
+	font-family: 'quicksand';
+	font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+	background-color: green;
+	color: white;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+	background-color: #4CAF50;
+  }
+  /*import the font-family from google fonts/Quicksand/Quicksand-VariableFont_wght*/
+@font-face {
+	font-family: quicksand;
+	src: url('fonts/Quicksand/Quicksand-VariableFont_wght.ttf');
+}
+
+	/*background of the hero section*/
+.hero {
+	background-color: #c1e6ef;
+}
+	
+.hero h1,h2,h3,h4,h5{
+	font-weight: 700;
+	color: #2e5d27 !important;
+}
+
+.hero-post{
+	position: relative;
+}
+
+
+/* position the badge/links to to the right corner of their box*/
+.hero-post-badges {
+	position: absolute; 
+	top: 10px;
+	right: 10px;
+}
+.hero-post-badges>a{
+	background-color: #1F2833;
+	display: block;
+
+}
+
+.btn-main {
+	background-color: white !important;
+	color: #1F2833;
+}
+.blog-posts{
+	background-color: white;
+}
+
+footer {
+	background-color:  #4CAF50;
+	color: white !important;
+}
+footer a {
+	color: white;
+}
+
+.social-links {
+	background-color: #4CAF50;
+	font-size: 3rem;
+}
+.social-links a{
+	color: white;
+}
+
+.social-link-text{
+	color: white;
+	font-size: 30px;
+	margin-top: 15px;
+}
+
+.prsnl-scl-link{
+	font-size: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.hero-img-text{
+	background-color: white;
+}
